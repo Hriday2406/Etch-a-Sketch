@@ -6,12 +6,24 @@
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="settings">
-        <button id="btnSize">Size</button>
-    </div>
-    <div class="container" id="container">
-    </div>
+    <header> Etch-a-Sketch</header>
+    <main>
+        <div class="settings">
+            <button class="btn" id="btnColored">Coloured</button>
+            <button class="btn" id="btnEraser">Eraser</button>
+            <div class="slider">
+                <input type="range" min="1" max="64" value="16" id="slider">
+                <p id="sliderValue">Value = 16</p>
+            </div>
+            <button class="btn" id="btnClear">Clear</button>
+        </div>
+        <div class="container" id="container"></div>
+    </main>
+    <footer>Made by Hriday</footer>
 </body>
 </html>

@@ -9,41 +9,91 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 5px white;
+}
+
+footer {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .settings {
-    margin: 10rem;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#btnSize {
-    padding: 1.5em;
+.btn {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.75em;
     border-radius: 10px;
     color: white;
     border: 1px solid white;
     background-color: black;
+    box-shadow: 0px 0px 15px 2px white;
+    transition: all 0.02s linear;
+}
+
+.btn:active {
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 15px 2px white;
+}
+
+.slider {
+    width: 215px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    box-shadow: 0px 0px 15px 2px white;
+}
+
+.slider input {
+    width: 100%;
+}
+
+.slider p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.75rem;
 }
 
 .container {
-    height: 48.25rem;
-    width: 48.25rem;
-    border: 2px solid white;
-    /* margin: 3rem; */
+    height: 60vh;
+    width: 60vh;
+    margin: 4rem;
+    margin-top: 0;
     display: flex;
+    box-shadow: 0px 0px 15px 2px white;
 }
 
 .box {
     flex: 1;
-    /* border: 1px solid red; */
 }
 
 .row {
     display: flex;
     flex-direction: column;
     flex: 1;
-}
-
-.coloured {
-    background-color: white;
 }
