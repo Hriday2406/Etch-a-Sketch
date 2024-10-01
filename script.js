@@ -12,7 +12,7 @@ function createGrid(size){
             let gridBox = document.createElement('div');
             gridBox.classList.add('box');
             gridBox.addEventListener('mouseover', () => {
-                gridBox.style.backgroundColor = randomColor(colored);
+                if(container.dataset.clicked == 'true') gridBox.style.backgroundColor = randomColor(colored);
             });
             gridRow.append(gridBox);
         }
@@ -59,3 +59,6 @@ btnClear.addEventListener('click', () => {
     removeGrid(size);
     createGrid(size);
 })
+
+window.addEventListener('mousedown', () => container.dataset.clicked = true);
+window.addEventListener('mouseup', () => container.dataset.clicked = false );

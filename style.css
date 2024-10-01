@@ -20,6 +20,7 @@ header, footer {
     text-align: center;
     padding: 1rem;
     box-shadow: 0px 0px 20px 5px white;
+    user-select: none;
 }
 
 footer {
@@ -50,6 +51,7 @@ main {
     background-color: black;
     box-shadow: 0px 0px 15px 2px white;
     transition: all 0.02s linear;
+    user-select: none;
 }
 
 .btn:active {
@@ -65,6 +67,7 @@ main {
     border: 1px solid white;
     background-color: black;
     box-shadow: 0px 0px 15px 2px white;
+    user-select: none;
 }
 
 .slider input {
@@ -86,6 +89,7 @@ main {
     margin-top: 0;
     display: flex;
     box-shadow: 0px 0px 15px 2px white;
+    user-select: none;
 }
 
 .box {
